@@ -120,7 +120,7 @@ export default function Navbar() {
     setState(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Perform form validation
@@ -141,26 +141,23 @@ export default function Navbar() {
       course: course
     };
 
-    fetch(`https://smiling-blue-hosiery.cyclic.app/api/auth/signup`, {
+    let response= await fetch(`http://localhost:8000/api/auth/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(payload),
     })
-      .then((response) => {
-        if (response.ok) {
-          console.log("Registration successfully");
-        
-          alert("Registered Successfully!")
-        } else {
-          console.error("Failed to Registration");
-          alert("Failed to Registration");
-        }
-      })
-      .catch((error) => {
-        console.error("An error occurred while deleting the video", error);
-      });
+    response= await response.json();
+    if(response.status=="present")
+    {
+      alert("User is already present\nYou can sign in :)")
+    }
+    else
+    {
+
+        alert('Signed up successfully :)')
+    }
     // Reset the form fields
     setFullName("");
     setEmail("");
