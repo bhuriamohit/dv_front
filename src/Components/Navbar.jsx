@@ -30,7 +30,7 @@ export default function Navbar() {
     };
   }, []);
   const closeInquiryForm = () => {
-    setShowInquiry(false)
+    setShowInquiry(false);
   }
   const closeThankYou=()=>{
     setThankYou(false)
