@@ -1,0 +1,48 @@
+.uploadsection
+{
+    margin-top: 25%;
+    margin-bottom: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.superadminheading {
+    text-align: center;
+  }
+  
+  .uploadlecture {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For screen sizes up to 768px */
+  @media (max-width: 768px) {
+    .uploadlecture {
+      max-width: 150px;
+    }
+  }
+  
+  /* For screen sizes up to 576px */
+  @media (max-width: 576px) {
+    .uploadsection {
+      padding: 10px;
+    }
+  
+    .uploadlecture {
+      font-size: 14px;
+    }
+  }

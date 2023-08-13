@@ -1,0 +1,16 @@
+.sticky-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+.sticky-footer .btn-a-solid:nth-child(2){
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+}

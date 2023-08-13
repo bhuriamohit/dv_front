@@ -1,0 +1,45 @@
+.writing-exam-section{
+    margin: 3rem 0;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: rgb(2, 2, 56);
+    color: white;
+}
+.writing-exam-section h2 span{
+    color: var(--orange);
+}
+.writing-exam-section h4 span{
+    background-color: red;
+    padding: 2rem 1.4rem;
+    border-radius: 50%;
+}
+.exam-section-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.exam-section-flex img{
+    width: 250px;
+}
+.exam-section-flex .btn-a-solid{
+    background-color: var(--orange);
+    border: none;
+}
+
+
+@media screen and (max-width:700px) {
+    .exam-section-flex h1{
+        font-size: 3rem;
+    }
+    .writing-exam-section h2{
+        font-size: 2rem;
+    }
+    .exam-section-flex img{
+        width: 150px;
+    }
+}

@@ -1,0 +1,38 @@
+.upcoming-seminar-section{
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.upcoming-seminar-section h6{
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    background-color: var(--purple);
+    color: white;
+}
+.upcoming-seminar-section h2{
+    font-family: 'Heebo', sans-serif;
+}
+.upcoming-seminar-section h2 span{
+    font-family: 'Heebo', sans-serif;
+    color: var(--purple);
+}
+.upcoming-seminar-section p{
+    max-width: 600px;
+    font-size: 12px;
+    text-align: center;
+}
+.upcoming-seminar-section img{
+    width: 350px;
+    margin-top: 2rem;
+}
+.upcoming-seminar-section .e-book-flex{
+    margin-top: 2rem;
+}
+.e-book-flex .seminar-card-img{
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+    border-radius: 8px;
+}

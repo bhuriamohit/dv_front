@@ -1,0 +1,95 @@
+.specific-course-detail{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+.specific-course-detail h6{
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    background-color: var(--orange);
+}
+.specific-course-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+.specific-course-flex-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.specific-course-flex-right p{
+    max-width: 400px;
+    font-size: 12px;
+}
+.specific-course-flex-right h3{
+    font-family: 'Heebo', sans-serif;
+}
+
+.specific-course-flex-right h3 span{
+    font-family: 'Heebo', sans-serif;
+    color: red;
+}
+
+
+.subject-detail-box{
+    padding: 2rem 2rem;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.subject-detail-drop-down{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subject-detail-drop-down ul{
+    margin: 2rem 0;
+}
+.subject-detail-box ul li{
+    font-size: 12px;
+    max-width: 400px;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+}
+
+
+
+.specific-course-flex-left{
+    background-color: rgb(235, 191, 252);
+    padding: 2rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+.specific-course-flex-left video{
+    width: 240px;
+}
+.specific-course-flex-left h4{
+    font-size: 1.5rem;
+}
+.specific-course-flex-left .flex-row{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 10px;
+}
+.flex-row-star-icon{
+    width: 10px;
+    height: 10px;
+}

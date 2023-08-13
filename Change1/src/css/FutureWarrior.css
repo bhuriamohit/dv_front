@@ -1,0 +1,63 @@
+.future-warrior{
+    margin: 3rem 0;
+    padding: 3rem 3rem;
+    background-color: rgb(255, 169, 10);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.future-warrior-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.future-warrior-left h1 span{
+    color: white;
+}
+.future-warrior-left p{
+    max-width: 500px;
+}
+.small-box-section{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.future-warrior-small-box{
+    max-width: 200px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 12px;
+}
+.future-warrior-right img{
+    width: 400px;
+    border-radius: 12px;
+}
+
+@media screen  and (max-width:1030px){
+    .future-warrior-left{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen  and (max-width:650px){
+    .future-warrior-left h1{
+        font-size: 3rem;
+    }
+}
+@media screen  and (max-width:500px){
+    .future-warrior-left p{
+        font-size: 12px;
+    }
+    .future-warrior img{
+        width: 300px;
+    }
+}

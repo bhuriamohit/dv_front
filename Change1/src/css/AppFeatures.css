@@ -1,0 +1,95 @@
+.app-features{
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}.app-features h6{
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    background-color: var(--orange);
+    transform: translateY(20px);
+}
+.app-features-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.app-features-buttons .btn-a-outline{
+    background-color: transparent;
+    font-size: 22px;
+    transition: 0.4s;
+}
+.app-features-buttons .btn-a-outline:hover{
+    background-color: var(--purple);
+    color: white;
+}
+.app-feature-main-section{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.app-feature-main-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+.app-feature-main-section-left span{
+    display: flex;
+    gap: 1rem;
+}
+.app-feature-main-section-left h3{
+    margin: 2rem 0;
+}
+.app-feature-main-section-right img{
+    width: 300px;
+    border-radius: 8px;
+}
+.app-feature-download-app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.app-feature-download-app img{
+    width: 150px;
+}
+
+
+#appFeatureStudyMaterialSection{
+    display: flex;
+}
+#appFeatureMockTestSection{
+    display: none;
+}
+#appFeatureLectureSection{
+    display: none;
+}
+#appFeatureCourseSection{
+    display: none;
+}
+#appFeaturePhysicalTrainingSection{
+    display: none;
+}
+
+
+@media screen and (max-width:500px) {
+    .app-features-buttons .btn-a-outline{
+        background-color: transparent;
+        font-size: 12px;
+        transition: 0.4s;
+    }
+}

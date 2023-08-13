@@ -1,0 +1,38 @@
+.blogs-section{
+    /* margin: 2rem 0; */
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.blogs-section h6{
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    background-color: var(--orange);
+}
+.blogs-section h3{
+    font-family: 'Heebo', sans-serif;
+}
+.blogs-section h3 span{
+    font-family: 'Heebo', sans-serif;
+    color: var(--orange);
+}
+.blogs-section-scroll{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 2rem;
+}
+.blog-card{
+    width: 250px;
+    height: 170px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+.blogs-section-scroll::-webkit-scrollbar{
+    display: none;
+}

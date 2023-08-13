@@ -1,0 +1,98 @@
+.scale-card-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 3rem 3rem;
+    transition: 0.6s;
+}
+.scale-card{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 2rem 2rem;
+    background-color: var(--orange);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+    transition: 0.6s all;
+}
+.scale-card-left{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: 0.6s;
+    transform: translateX(-300px);
+}
+.scale-card-left h4{
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.6rem;
+    transition: 0.6s;
+}
+.scale-card-left p{
+    font-size: 12px;
+    transition: 0.6s;
+}
+.scale-card-left .btn-a-solid{
+    max-width: 150px;
+    transition: 0.6s;
+}
+.scale-card-right{
+    transition: 0.6s;
+}
+.scale-card-right img{
+    width: 200px;
+    scale: 1.2;
+    transition: 0.6s;
+    transform: translateX(-90px) translateY(30px);
+}
+.scale-card:hover > .scale-card-right img{
+    scale: 1.7;
+    transform: translateY(-10px);
+}
+
+.scale-card:hover > .scale-card-left{
+    z-index: 10;
+    color: black;
+   transform: translateX(0);
+}
+
+@media screen and (max-width:450px) {
+    .scale-card{
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        padding: 2rem 2rem;
+        background-color: var(--orange);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        overflow: hidden;
+        transition: 0.6s all;
+        font-size: 8px;
+    }
+    .scale-card-right img{
+        width: 150px;
+        scale: 1.2;
+        transition: 0.6s;
+        transform: translateX(-90px) translateY(30px);
+    }
+}
+@media screen and (max-width:350px) {
+    .scale-card-right img{
+        width: 100px;
+        scale: 1.2;
+        transition: 0.6s;
+        transform: translateX(-90px) translateY(30px);
+    }
+    .scale-card{
+        height: 200px;
+    }
+}

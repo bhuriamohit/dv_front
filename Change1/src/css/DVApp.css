@@ -1,0 +1,50 @@
+.dv-app-section{
+    width: 100%;
+    margin: 3rem 0;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap-reverse;
+}
+.dv-app-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+}
+.dv-app-section-left h2 span{
+    color: var(--purple);
+}
+.dv-app-flex{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.dv-app-flex .btn-a-solid{
+    max-width: 250px;
+    text-align: center;
+    font-size: 14px;
+}
+.dv-app-section-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dv-app-section-right img{
+    width: 300px;
+}
+
+@media screen and (max-width:700px) {
+    .dv-app-section-right img{
+        width: 200px;
+    }
+    .dv-app-section-left h2{
+        font-size: 2rem;
+    }
+    .dv-app-flex .btn-a-solid{
+        font-size: 8px;
+    }
+    
+}

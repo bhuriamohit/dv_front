@@ -1,0 +1,28 @@
+.acheive-more-section{
+    margin: 3rem 0;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    transition: 0.8s;
+}
+.acheive-more-section h3 span{
+    color: var(--purple);
+}
+.acheive-more-section .btn-a-solid{
+    font-size: 18px;
+}
+.acheive-more-section:hover{
+    background-color: var(--purple);
+    color: white;
+}
+.acheive-more-section:hover > .btn-a-solid{
+    background-color: var(--orange);
+    color: white;
+}
+.acheive-more-section:hover > h3 span{
+    color: var(--orange);
+}

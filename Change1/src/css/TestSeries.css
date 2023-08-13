@@ -1,0 +1,224 @@
+.test-series-header{
+    margin-top: 6rem;
+    padding: 3rem 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.test-series-header-left{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.test-series-header-left h1 span{
+    color: var(--purple);
+}
+.test-series-header-left p{
+    max-width: 500px;
+}
+.test-series-header-left .btn-a-solid{
+    max-width: 200px;
+}
+.test-series-header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-header-img{
+    border-radius: 12px;
+}
+.test-sm-img{
+    width: 120px;
+    height: 200px;
+    object-fit: fill;
+}
+.test-bg-img{
+    width: 200px;
+    z-index: 99;
+}
+.test-sm-img:nth-child(1){
+    transform: translateX(20px);
+}
+.test-sm-img:nth-child(3){
+    transform: translateX(-20px);
+}
+
+.test-series-content{
+    margin: 5rem 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.test-series-content h2{
+    text-align: center;
+}
+.test-series-content-features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.content-features-box{
+    padding: 2rem 2rem;
+    max-width: 250px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    color: white;
+}
+.content-features-box:nth-child(1) , .content-features-box:nth-child(3){
+    background-color: var(--purple);
+}
+.content-features-box:nth-child(2) , .content-features-box:nth-child(4){
+    background-color: var(--orange);
+}
+
+
+.test-series-why-test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 3rem;
+}
+.test-series-why-test-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-series-why-test-left img{
+    width: 450px;
+    border-radius: 12px;
+    height: undefined;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+.test-series-why-test-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+.test-series-why-test-right h2 span{
+    color: var(--orange);
+}
+
+
+
+.test-series-offer-section{
+    margin: 3rem 0;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: url("../Images/test-series-offer-section.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+.test-series-offer-section h3{
+    max-width: 800px;
+}
+.test-series-offer-section h3 span{
+    color: var(--purple);
+}
+
+
+.test-series .testimonial-section .testimonial-section-bottom .testimonial-card .feedback p{
+    font-size: 14px;
+}
+
+
+
+
+/* ++++++++++++++++++++++ OUR TEST SERIES +++++++++++++++++++++++ */
+.our-test-series{
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.our-test-series h2{
+    font-size: 3rem;
+}
+.our-test-series h2 span{
+    color: var(--orange);
+}
+.our-test-series-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.test-card{
+    padding: 2rem 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+    transition: 1.2s;
+    max-width: 300px;
+    height: 400px;
+}
+.test-card h3{
+    font-size: 1.3rem;
+}
+.test-card img{
+    width: 150px;
+}
+
+
+@media screen and (max-width:600px) {
+    .test-series-header-left{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    html{
+        font-size: 70%;
+    }
+    .test-series-why-test{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .test-series-why-test-left img{
+        width: 300px;
+    }
+}
+@media screen and (max-width:440px) {
+    .test-bg-img{
+        width: 150px;
+        z-index: 99;
+    }
+    .test-sm-img{
+        width: 80px;
+        height: 160px;
+    }
+    .test-sm-img:nth-child(1){
+        transform: translateX(10px);
+    }
+    .test-sm-img:nth-child(3){
+        transform: translateX(-10px);
+    }
+}
